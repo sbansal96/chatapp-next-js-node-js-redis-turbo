@@ -13,4 +13,4 @@ class SocketService {
     }
 }
 
-export default SocketService
+export default SocketService;
