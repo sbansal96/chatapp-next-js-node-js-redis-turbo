@@ -1,4 +1,4 @@
-import http from 'http'
+import http from 'http';
 import SocketService from './services/socket';
 
 
@@ -10,8 +10,10 @@ async function init() {
     socketService.io.attach(httpServer);
 
     httpServer.listen(PORT, () => {
-        console.log(`Server started at PORT ${PORT}`)
-    })
+        console.log(`Server started at PORT ${PORT}`);
+    });
+
+    socketService.initListeners();
 }
 
 init()
